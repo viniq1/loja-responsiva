@@ -12,12 +12,20 @@
 <body>
     <header>
         <div class="header-container">
-            <a href="#">
-                <img src="image/logo-white.png" alt="Logo da loja">
-            </a>
             <div>
-                <a href="#" id="link-sobre">Sobre</a>
-                <a href="#">Produtos</a>
+                <a href="#">
+                    <img src="image/logo-white.png" alt="Logo da loja">
+                </a>
+            </div>
+            <div class="pesquisa">
+                <input type="text" placeholder="Pesquisar">
+                <button type="submit">
+                    <img src="image/pesquisa.png" alt="Pesquisa">
+                </button>
+            </div>
+            <div class="links">
+                <a href="#sobre" id="link-sobre">Sobre</a>
+                <a href="#produtos">Produtos</a>
             </div>
         </div>
     </header>
@@ -28,12 +36,13 @@
     </div>
     
     <section>
-        <div class="produtos">
+        <div class="produtos" id="produtos">
             <div class="card-produto">
                 <ul>
                     <li>
                         <div>
                             <img src="image/notebook.jpg" alt="Notebooks">
+                            <h3>Notebooks</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In cum dolorem nulla eaque consectetur earum consequatur fugiat.</p>
                         </div>
                         <div id="botoes">
@@ -42,7 +51,8 @@
                     </li>
                     <li>
                         <div>
-                            <img src="image/smartphone.jpg" alt="Notebooks">
+                            <img src="image/smartphone.jpg" alt="smartphone">
+                            <h3>Smartphone</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In cum dolorem nulla eaque consectetur earum consequatur fugiat.</p>
                         </div>
                         <div id="botoes">
@@ -51,7 +61,8 @@
                     </li>
                     <li>
                         <div>
-                            <img src="image/game.jfif" alt="Notebooks">
+                            <img src="image/game.jfif" alt="console portátil">
+                            <h3>Consoles portáteis</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In cum dolorem nulla eaque consectetur earum consequatur fugiat.</p>
                         </div>
                         <div id="botoes">
@@ -60,7 +71,8 @@
                     </li>
                     <li>
                         <div>
-                            <img src="image/watch.jfif" alt="Notebooks">
+                            <img src="image/smartphone.jpg" alt="smartphone">
+                            <h3>Smartphone  </h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In cum dolorem nulla eaque consectetur earum consequatur fugiat.</p>
                         </div>
                         <div id="botoes">
@@ -69,7 +81,8 @@
                     </li>
                     <li>
                         <div>
-                            <img src="image/notebook.jpg" alt="Notebooks">
+                            <img src="image/software.png" alt="Softwares">
+                            <h3>Software</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In cum dolorem nulla eaque consectetur earum consequatur fugiat.</p>
                         </div>
                         <div id="botoes">
@@ -78,7 +91,8 @@
                     </li>
                     <li>
                         <div>
-                            <img src="image/notebook.jpg" alt="Notebooks">
+                            <img src="image/pc.webp" alt="Desktops">
+                            <h3>Desktops</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In cum dolorem nulla eaque consectetur earum consequatur fugiat.</p>
                         </div>
                         <div id="botoes">
@@ -87,7 +101,8 @@
                     </li>
                     <li>
                         <div>
-                            <img src="image/notebook.jpg" alt="Notebooks">
+                            <img src="image/cabos.webp" alt="Cabos e acessórios">
+                            <h3>Cabos</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In cum dolorem nulla eaque consectetur earum consequatur fugiat.</p>
                         </div>
                         <div id="botoes">
@@ -96,7 +111,8 @@
                     </li>
                     <li>
                         <div>
-                            <img src="image/notebook.jpg" alt="Notebooks">
+                            <img src="image/perifericos.webp" alt="Periféricos">
+                            <h3>Periféricos</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In cum dolorem nulla eaque consectetur earum consequatur fugiat.</p>
                         </div>
                         <div id="botoes">
@@ -118,5 +134,11 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="header-container">
+            &copy; - Site sem fins comerciais - todos os direitos reservados.
+        </div>
+    </footer>
 </body>
 </html>

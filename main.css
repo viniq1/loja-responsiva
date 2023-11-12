@@ -5,8 +5,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header {
+body {
+    background-color: aliceblue;
+}
+
+    header, footer {
     background-color: black;
+    color: white;
 }
 
 .header-container {
@@ -19,8 +24,44 @@ header {
     font-size: 1.3em;
 }
 
+.links {
+    text-align: right;
+}
+
+.header-container div {
+    width: 33.3%;
+}
+
 .header-container img {
     height: 30px;
+}
+
+.pesquisa {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+header button {
+    padding: 10px;
+    width: 20%;
+    background-color: black;
+    border: none;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: rgb(107, 106, 106);
 }
 
 .header-container div a {
@@ -34,7 +75,7 @@ header {
 
 section {
     max-width: 1024px;
-    margin: 80px auto;
+    margin: 40px auto;
 }
 
 #titulo {
@@ -49,15 +90,15 @@ section {
 }
 
 .card-produto ul {
-    list-style: none; /* Remove os marcadores de lista padrão */
-    display: flex; /* Torna os itens da lista flexíveis para poderem quebrar linhas */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha conforme necessário */
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .card-produto li {
-    width: calc(25% - 10px); /* Garante que cada item da lista ocupe aproximadamente 1/3 da largura do contêiner com margem entre eles */
-    margin-bottom: 60px; /* Adiciona margem na parte inferior de cada item para espaçamento */
+    width: calc(25% - 10px);
+    margin-bottom: 30px;
     background-color: #faf9f9;
     border-radius: 20px;
     box-shadow:  5px 5px 12px #929292, -5px -5px 12px #ffffff;
@@ -65,21 +106,22 @@ section {
 
 .card-produto img {
     height: auto;
-    max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+    max-width: 100%;
     border-radius: 20px;
 }
 
 .card-produto div {
-    padding: 10px; /* Adiciona preenchimento para espaçamento interno */
+    padding: 10px;
 }
 
 #botoes {
-    text-align: center; /* Centraliza os botões */
+    text-align: center;
 }
 
 button {
-    padding: 5px 10px; /* Adiciona preenchimento ao botão para melhor aparência */
+    padding: 5px 10px;
     border-radius: 20px;
+    cursor: pointer;
 }
     
 #container-sobre {
@@ -96,10 +138,11 @@ button {
 
 #sobre img {
     max-width: 50%;
-    margin-right: 8px;
+    margin-right: 24px;
+    border-radius: 20px;
 }
 
-#sobre p {
-    font-size: 1.5em;
+#sobre p {  
+    font-size: 1.3em;
     text-align: justify;
 }
