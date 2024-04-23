@@ -28,6 +28,10 @@ body {
     text-align: right;
 }
 
+.links img {
+    display: none;
+}
+
 .header-container div {
     width: 33.3%;
 }
@@ -145,4 +149,46 @@ button {
 #sobre p {  
     font-size: 1.3em;
     text-align: justify;
+}
+
+@media screen and (max-width: 767px)  {
+    .header-container {
+        max-width: 90%;
+    }
+
+    section {
+        max-width: 90%;
+    }
+
+    .card-produto ul {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .card-produto li {
+        width: fit-content;
+        margin-bottom: 30px;
+        background-color: #faf9f9;
+        border-radius: 20px;
+        box-shadow:  5px 5px 12px #929292, -5px -5px 12px #ffffff;
+    }
+
+    #sobre {
+        display: block;
+    }
+
+    #sobre img {
+        max-width: 100%;
+        margin: none;
+        border-radius: 20px;
+    }
+
+    .header-container button {
+        display: none;
+    }
+
+    .links a {
+        display: block;
+    }
+
 }
