@@ -160,17 +160,22 @@ button {
         max-width: 90%;
     }
 
-    .card-produto ul {
-        display: block;
-        font-size: 1.5em;
+    .card-produto {
+        text-align: center;
     }
 
+    .card-produto ul {
+        display: block;
+        justify-content: center;
+    }
+    
     .card-produto li {
-        width: fit-content;
-        margin-bottom: 30px;
-        background-color: #faf9f9;
-        border-radius: 20px;
-        box-shadow:  5px 5px 12px #929292, -5px -5px 12px #ffffff;
+        width: 100%;
+    }
+
+    .card-produto p {
+        margin-top: 10px;
+        text-align: justify;
     }
 
     #sobre {
