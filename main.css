@@ -15,7 +15,7 @@ body {
 }
 
 .header-container {
-    max-width: 1024px;
+    max-width: 90%;
     margin: 0 auto;
     padding: 10px;
     display: flex;
@@ -78,7 +78,7 @@ header button:hover {
 }
 
 section {
-    max-width: 1024px;
+    max-width: 90%;
     margin: 40px auto;
 }
 
@@ -93,7 +93,12 @@ section {
     font-size: 1em;
 }
 
+.card-produto {
+    text-align: center;
+}
+
 .card-produto ul {
+    max-width: 100%;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -151,7 +156,7 @@ button {
     text-align: justify;
 }
 
-@media screen and (max-width: 767px)  {
+@media screen and (max-width: 640px)  {
     .header-container {
         max-width: 90%;
     }
@@ -167,8 +172,9 @@ button {
     .card-produto ul {
         display: block;
         justify-content: center;
+        width: 100%;
     }
-    
+
     .card-produto li {
         width: 100%;
     }
@@ -186,6 +192,48 @@ button {
         max-width: 100%;
         margin: none;
         border-radius: 20px;
+    }
+
+    .header-container button {
+        display: none;
+    }
+
+    .links a {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:641px) and (max-width:870px)  {
+
+    .header-container {
+        max-width: 90%;
+    }
+
+    section {
+        max-width: 90%;
+    }
+
+    .card-produto {
+        text-align: center;
+    }
+
+    .card-produto li {
+        width: calc(50% - 10px);
+    }
+
+    .card-produto p {
+        margin-top: 10px;
+        text-align: justify;
+    }
+
+    #sobre {
+        display: block;
+    }
+
+    #sobre img {
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 
     .header-container button {
